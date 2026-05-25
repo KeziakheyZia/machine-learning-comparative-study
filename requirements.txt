@@ -1,0 +1,10 @@
+streamlit
+pandas
+joblib
+scikit-learn
+matplotlib
+seaborn
+wordcloud
+scipy
+plotly
+pillow
