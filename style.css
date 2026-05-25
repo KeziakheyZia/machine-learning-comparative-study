@@ -303,3 +303,23 @@ div[data-testid="stMetric"] {
     ) !important; /* Sedikit melembutkan warna putih teks */
   }
 }
+
+
+
+/* Saat dibuka di layar HP (Maksimal 768px) */
+@media screen and (max-width: 768px) {
+  /* 1. Paksa wadah utama Plotly menyusut ke tinggi 280px */
+  .responsive-pie-box [data-testid="stPlotlyChart"] {
+    height: 280px !important;
+  }
+
+  /* 2. Paksa elemen svg internal Plotly agar ikut menciut */
+  .responsive-pie-box .js-plotly-plot .plotly .main-svg {
+    height: 280px !important;
+  }
+
+  /* 3. Sembunyikan legenda warna di HP karena memakan tempat dan bikin teks bertumpuk */
+  .responsive-pie-box .legend {
+    display: none !important;
+  }
+}
