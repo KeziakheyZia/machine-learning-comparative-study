@@ -257,3 +257,49 @@ div[data-testid="stMetric"] {
   color: #0f6937;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  /* 1. Menyesuaikan bantalan kotak merah marun (hero-wrap) agar pas di HP */
+  .hero-wrap {
+    padding: 20px 15px !important;
+    margin-bottom: 15px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+  }
+
+  /* 2. Menghias ulang posisi logo agar rapi di atas tengah */
+  .hero-wrap img {
+    display: block !important;
+    margin: 0 auto 10px auto !important;
+    width: 45px !important;
+    height: auto !important;
+  }
+
+  /* 3. Menghias posisi badge kecil */
+  .hero-badge {
+    display: inline-block !important;
+    margin: 0 auto 12px auto !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* 4. MENGECEK UKURAN JUDUL UTAMA (Ini yang bikin bertumpuk sebelumnya!) */
+  .hero-title {
+    font-size: 1.1rem !important; /* Ukuran menyusut proporsional di HP */
+    line-height: 1.3 !important; /* Memberikan jarak antar baris kalimat agar tidak bertubrukan */
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* 5. MENGECEK UKURAN SUBJUDUL UTAMA */
+  .hero-subtitle {
+    font-size: 0.8rem !important; /* Ukuran teks deskripsi mengecil di HP */
+    line-height: 1.4 !important;
+    color: rgba(
+      255,
+      255,
+      255,
+      0.85
+    ) !important; /* Sedikit melembutkan warna putih teks */
+  }
+}
