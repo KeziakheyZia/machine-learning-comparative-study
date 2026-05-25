@@ -453,7 +453,11 @@ with tab1:
         fig_pie.update_traces(textposition="outside", textinfo="percent+label", marker=dict(line=dict(color="#FFFFFF", width=2)))
         # fig_pie.update_layout(height=400, showlegend=False, margin=dict(l=10, r=10, t=100, b=10))
         fig_pie.update_layout(height=400, margin=dict(l=10, r=10, t=100, b=10), legend=dict(orientation="h", y=1.1, x=0.7, xanchor="left"))
-        st.plotly_chart(fig_pie, use_container_width=True, config={"displayModeBar":"hover"})
+        
+        st.markdown('<div class="responsive-pie-box">', unsafe_allow_html=True)
+        st.plotly_chart(fig_pie, use_container_width=True, config={"displayModeBar": False})
+        st.markdown('</div>', unsafe_allow_html=True)
+
 
     with c2:
         # Bar Chart Distribusi Jumlah
